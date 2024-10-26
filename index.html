@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Malik's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header" id="index">
+        <div class="wrapper">
+            <header>
+                <a href="about.html"  ><div class="logo">
+                    <i class="fa-solid fa-info-circle"></i>
+                    <div class="logo-text">About</div>
+                </div>
+                </a>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="projects.html" class="hh">Projects</a></li>
+                        <li><a href="https://leetcode.com/u/Ab0NlCVrL9/" target="_blank" class="hh">LeetCode</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/user/malikzo1yyx/" target="_blank" class="hh">GFG</a></li>
+                        <li><a href="https://codeforces.com/profile/MALIK_ANTUPARTHI" target="_blank" class="hh">CodeForces</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="mainimg.jpeg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Aspiring Software Professional</span></h5>
+                    <h1 class="small">Malik Antuparthi</h1>
+                    <p> With a focus on problem-solving, coding efficiency, and a love for Python and algorithms, I create solutions that make an impact. 
+                        I’m continuously learning and refining my skills to stay on the cutting edge of technology.
+                        Specializing in solving real-world problems through coding, with expertise in Data Structures, and Algorithmic Challenges.  
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="MyResumeF.pdf" target="_blank" class="btn active">Resume</a>
+                       <a href="contact.html" class="btn active">Contact</a>
+                    </div>
+
+                    <div class="social">
+                    
+                        <a href="https://github.com/MALIKZONTY" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/malik-antuparthi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/malik_zonty/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Aspiring Software Professional","Continuous Learner","Coder"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+
+</body>
+</html>
